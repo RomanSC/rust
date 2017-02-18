@@ -12,7 +12,9 @@ enum List {
 
 // Methods can be attached to an enum
 impl List {
-    // Create an empty list
+    // Crate function that calls
+    // List which is an enum
+    // creating an empty list
     fn new() -> List {
         // `Nil` has type `List`
         Nil

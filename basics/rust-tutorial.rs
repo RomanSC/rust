@@ -12,6 +12,11 @@
 use std::{i8, i16, i32, i64, u8, u32, u64, isize, usize, f32, f64};
 use std::io::stdin;
 
+// For printing without trailing new line
+// See line #207
+//io::stdin().read_line(&mut num);
+//io::stdout().flush()
+
 fn variables() {
     println!("\nVariables: ");
 
@@ -159,7 +164,8 @@ fn some_conditionals() {
     println!("Can vote: {}", can_vote);
 }
 
-fn looping(){
+fn adder(){
+    // from lesson on looping
     let mut x = 1;
 
     // loop until break
@@ -177,8 +183,13 @@ fn looping(){
         // Because fuck it this
         // is a low level language
         // mwuhahahahahah
-        if (x > 10000000) {
+        if (x > 9999999999) {
+            // "overflowing literals"
             break;
+        }
+
+        if (x > 9000) {
+            println!("{} is over 9000!!!!", x);
         }
 
         x += 1;
@@ -187,12 +198,99 @@ fn looping(){
 
 }
 
+fn looping() {
+    // For iterative loop see above code
+
+    // While loop
+    let mut y = 1;
+
+    while (y <= 101) {
+        // Print without trailing new line
+        // https://stackoverflow.com/questions/37531903/how-do-i-print-output-without-a-trailing-newline-in-rust
+        // Huh... printline = pritnln! print = print!
+        print!("{}", y);
+        y += 1;
+        if (y >= 100) {
+            print!("");
+            break;
+        }
+    }
+
+     for z in 0..10 {
+         // 123456789
+         println!("{}", z);
+     }
+}
+
+fn moresillystuff(){
+    let rand_string = "I am a random string";
+    // What? No you're not... whatever.
+
+    println!("Length: {}", rand_string.len());
+
+    let (first, second) = rand_string.split_at(6);
+
+    println!("First: {} Second: {}", first, second);
+    // Output: First: I am a Second:  random string
+
+    // Count
+    let count = rand_string.chars().count();
+    let mut chars = rand_string.chars();
+
+    let mut indiv_char = chars.next();
+
+    loop {
+        match indiv_char {
+            Some(x) => print!("{}", x),
+            None => break,
+        }
+        indiv_char = chars.next();
+        // Weird, I'm sure this will eventually be useful
+    }
+    // Output: I am a random string
+
+    // New line so output looks fine
+    println!("");
+
+    let mut word = rand_string.split_whitespace();
+
+    let mut indiv_word = word.next();
+
+    loop {
+        match indiv_word {
+            Some(x) => print!("{}", x),
+            None => break,
+        }
+        indiv_word = word.next();
+    }
+    //Output: Iamarandomstring%
+
+    // Now with lines!?
+    // Are you f!@#$ing kidding!?
+    let rand_lines = "I am a random string\nThere are other strings like it\nThis string is the best";
+
+    let mut lines = rand_lines.lines();
+
+    let mut indiv_line = lines.next();
+
+    loop {
+        match indiv_line {
+            Some(x) => println!("{}", x),
+            None => break,
+        }
+        indiv_line = lines.next();
+    }
+
+    println!("Find best: {}", rand_lines.contains("best"));
+}
+
 fn main() {
     //variables()
     //stringformatting()
     //expressions()
     //maths()
     //some_conditionals()
-    looping()
-
+    //adder()
+    //looping()
+    //moresillystuff()
 }
