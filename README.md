@@ -50,4 +50,4 @@ fn main() {
 
 
 
-<span align="center"><a href="https://github.com/RomanSC/repositories">My other repositories</a> | <a href="https://raw.githubusercontent.com/RomanSC/algorithms/master/chapter-1/waysoffib.py"></a>Fibonacci in Python</span>
+<span align="center"><a href="https://github.com/RomanSC/repositories">My other repositories</a> | <a href="https://raw.githubusercontent.com/RomanSC/algorithms/master/chapter-1/waysoffib.py">Fibonacci in Python</a></span>
