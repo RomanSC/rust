@@ -18,6 +18,8 @@ I've written a fib() algorithm that's really slow. Works kinda like [this](https
 \#TODO: Soon it will be memoized. As soon as I figure out how to pass different typed arguments
 into my fib function to change memo inside the fib() function:
 
+Fibonacci:
+
 `fn fib_x(n: i32) -> i32 {
     let mut memo = Vec::new();
 
@@ -32,14 +34,16 @@ into my fib function to change memo inside the fib() function:
 
         n
     }
-\}
-\
-\fn main() {
-\
-\    let n: i32 = 39;
-\    let mut memo: Vec<i32> = Vec::new();
-\
-\    println!("{}", fib_x(n));
-\}`
+}`
+
+Main:
+
+`fn main() {
+
+    let n: i32 = 39;
+    let mut memo: Vec<i32> = Vec::new();
+
+    println!("{}", fib_x(n));
+} `
 
 [My other repositories](https://github.com/RomanSC/repositories) | [Fibonacci in Python](https://raw.githubusercontent.com/RomanSC/algorithms/master/chapter-1/waysoffib.py)
