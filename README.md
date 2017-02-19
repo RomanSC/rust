@@ -20,7 +20,8 @@ into my fib function to change memo inside the fib() function:
 
 Fibonacci:
 
-``fn fib_x(n: i32) -> i32 {
+<pre>
+`fn fib_x(n: i32) -> i32 {
     let mut memo = Vec::new();
 
     if memo.contains(&n) {
@@ -34,16 +35,17 @@ Fibonacci:
 
         n
     }
-}``
+}
 
 Main:
 
-``fn main() {
+fn main() {
 
     let n: i32 = 39;
     let mut memo: Vec<i32> = Vec::new();
 
     println!("{}", fib_x(n));
-}``
+}`
+</pre>
 
 [My other repositories](https://github.com/RomanSC/repositories) | [Fibonacci in Python](https://raw.githubusercontent.com/RomanSC/algorithms/master/chapter-1/waysoffib.py)
