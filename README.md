@@ -49,4 +49,4 @@ fn main() {
 </pre>
 
 
-<pre><span align="center">[My other repositories](https://github.com/RomanSC/repositories) | [Fibonacci in Python](https://raw.githubusercontent.com/RomanSC/algorithms/master/chapter-1/waysoffib.py)</span></pre>
+<span align="center"><a href="https://github.com/RomanSC/repositories") </a> | <a href="https://raw.githubusercontent.com/RomanSC/algorithms/master/chapter-1/waysoffib.py"></a>Fibonacci in Python</span>
