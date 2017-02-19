@@ -32,13 +32,14 @@ into my fib function to change memo inside the fib() function:
 
         n
     }
-}
-
-fn main() {
-    let n: i32 = 39;
-    let mut memo: Vec<i32> = Vec::new();
-
-    println!("{}", fib_x(n));
-}`
+\}
+\
+\fn main() {
+\
+\    let n: i32 = 39;
+\    let mut memo: Vec<i32> = Vec::new();
+\
+\    println!("{}", fib_x(n));
+\}`
 
 [My other repositories](https://github.com/RomanSC/repositories) | [Fibonacci in Python](https://raw.githubusercontent.com/RomanSC/algorithms/master/chapter-1/waysoffib.py)
