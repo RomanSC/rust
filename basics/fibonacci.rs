@@ -1,6 +1,6 @@
 //
 
-// fn fib_e(n: i32, memo: Vec) -> (i32, Vec) {
+// fn fib_e(n: i64, memo: Vec) -> (i64, Vec) {
 //     // memo as a vec
 //     //let mut memo = Vec::new();
 
@@ -28,7 +28,7 @@
 //     }
 // }
 
-fn fib_x(n: i32) -> i32 {
+fn fib_x(n: i64) -> i64 {
     // memo as a vec
     let mut memo = Vec::new();
 
@@ -57,8 +57,8 @@ fn fib_x(n: i32) -> i32 {
 }
 
 fn main() {
-    let n: i32 = 39;
-    let mut memo: Vec<i32> = Vec::new();
+    let n: i64 = 10;
+    let mut memo: Vec<i64> = Vec::new();
 
     //println!("{}", fib_e(n, memo));
     println!("{}", fib_x(n));
