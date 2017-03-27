@@ -15,21 +15,21 @@ pub struct Point {
     y: u32,
 }
 
-const WIDTH: u32 = 800;
-const HEIGHT: u32 = 600;
+const WIDTH: u32 = 9000;
+const HEIGHT: u32 = 9000;
 
 
 /// main program
 pub fn main() {
     let mut img = image::ImageBuffer::from_fn(WIDTH, HEIGHT, |x, y| {
         if x == 0 && y == 0 {
-            image::Luma([0u8])
-        } else {
             image::Luma([255u8])
+        } else {
+            image::Luma([0u8])
         }
     });
 
-    let mut cnt: u32 = 1_000_000;
+    let mut cnt: u32 = 1000_000;
 
     // Points of triangle
     let pts: [Point; 3] = [
